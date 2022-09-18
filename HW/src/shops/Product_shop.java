@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Product_shop extends shop{
     ArrayList array = new ArrayList<>();
-    ArrayList<Integer> price = new ArrayList<Integer>(pricePr.length);
+    //ArrayList<Integer> price = new ArrayList<Integer>(pricePr.length);
     public Product_shop() {
         array.addAll(List.of(product));
         for (int i =0 ; i < pricePr.length; i++) {
@@ -13,11 +13,11 @@ public class Product_shop extends shop{
         }
     }
 
-    public ArrayList getArray() {
-        return array;
-    }
-
-    public ArrayList<Integer> getPrice() {
-        return price;
-    }
+    //    public ArrayList getArray() {
+//        return array;
+//    }
+//
+//    public ArrayList<Integer> getPrice() {
+//        return price;
+//    }
 }

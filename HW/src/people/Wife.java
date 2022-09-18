@@ -6,8 +6,6 @@ import java.util.Random;
 import java.util.ArrayList;
 
 public class Wife {
-    //    Product_shop PrShop = new Product_shop();
-//    Home_appliances_store hmShop = new Home_appliances_store();
     Products list = new Products();
     private int price = 0;
     ArrayList priceAll = new ArrayList();
@@ -33,8 +31,5 @@ public class Wife {
             all.remove(y);
         }
         return array;
-    }
-    protected int give_price() {
-        return this.price;
     }
 }

@@ -2,15 +2,14 @@ package shops;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Random;
 
 public class Home_appliances_store extends shop{
     ArrayList array = new ArrayList<>();
-    ArrayList<Integer> price = new ArrayList<Integer>(pricePr.length);
+    ArrayList<Integer> price = new ArrayList<Integer>(priceTech.length);
     public Home_appliances_store() {
         array.addAll(List.of(product));
-        for (int i =0 ; i < pricePr.length; i++) {
-            price.add(pricePr[i]);
+        for (int i =0 ; i < priceTech.length; i++) {
+            price.add(priceTech[i]);
         }
     }
     public ArrayList getArray() {

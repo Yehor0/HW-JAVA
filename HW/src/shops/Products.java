@@ -1,5 +1,7 @@
 package shops;
 
+import java.util.ArrayList;
+
 public class Products {
     public String[] product = {"Bread" , "Sausage" , "Butter" , "Milk" , "Potato"};
     int[] pricePr = {110 , 80 , 70 , 300 , 40};
@@ -10,6 +12,21 @@ public class Products {
 
     public String[] getProduct() {
         return product;
+    }
+
+    public ArrayList getArrayPricePr() {
+        ArrayList list = new ArrayList();
+        for (int i = 0 ; i < pricePr.length;i++) {
+            list.add(pricePr);
+        }
+        return list;
+    }
+    public ArrayList getArrayPriceTech() {
+        ArrayList list = new ArrayList();
+        for (int i = 0 ; i < priceTech.length;i++) {
+            list.add(priceTech);
+        }
+        return list;
     }
 
     public int[] getPricePr() {
