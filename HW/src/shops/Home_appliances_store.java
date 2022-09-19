@@ -4,19 +4,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Home_appliances_store extends shop{
+    shop shop = new shop();
     ArrayList array = new ArrayList<>();
-    ArrayList<Integer> price = new ArrayList<Integer>(priceTech.length);
     public Home_appliances_store() {
+        shop.discount(60 , false);
+        shop.IsNotPresent(false);
         array.addAll(List.of(product));
-        for (int i =0 ; i < priceTech.length; i++) {
-            price.add(priceTech[i]);
-        }
-    }
-    public ArrayList getArray() {
-        return array;
-    }
-
-    public ArrayList<Integer> getPrice() {
-        return price;
     }
 }

@@ -9,7 +9,6 @@ import java.util.Random;
 
 public class Husband {
     private int AllPrice;
-    Random rnd = new Random();
     private Wife wife = new Wife();
     private String str;
     private Home_appliances_store shopTech = new Home_appliances_store();
@@ -17,8 +16,6 @@ public class Husband {
     private Product_shop shopProd = new Product_shop();
     private ArrayList NeedToBuy = wife.Give_And_Generate_list();
     public void Show() {
-        shopProd.discount(rnd.nextInt(50) + 1 , true );
-        shopTech.discount(rnd.nextInt(50) + 1 , false );
         System.out.println("Total list : ");
         for (int i =0; i < NeedToBuy.size();i++) {
             str = (String) NeedToBuy.get(i);
@@ -27,7 +24,6 @@ public class Husband {
         }
         System.out.println();
         System.out.println("Bought:");
-        shop.IsNotPresent();
         for (int i =0; i < NeedToBuy.size();i++) {
             str = (String) NeedToBuy.get(i);
             if (shopProd.CheckIsPresent(str)) {
@@ -46,7 +42,5 @@ public class Husband {
 
 
 
-        //System.out.println(wife.give_price());
-    //go shop
     }
 }
