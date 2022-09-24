@@ -21,6 +21,7 @@ public class Product_shop extends shop {
         }
         return price;
     }
+    @Override
     public void DoesIsDiscount() {
         int x = rnd.nextInt(40) + 1;
         float o = x;

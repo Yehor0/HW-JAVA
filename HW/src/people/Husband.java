@@ -14,12 +14,11 @@ public class Husband {
     private Product_shop shopProd = new Product_shop();
     private ArrayList NeedToBuy = wife.Give_And_Generate_list();
     public void Show() {
-        int YouHave = wife.price;
         System.out.println("Should buy : ");
         for (int i =0 ; i < NeedToBuy.size(); i++) {
             System.out.println(NeedToBuy.get(i));
         }
-        System.out.println("\n Total list : \n");
+        System.out.println("\n Total list : ");
         int x = list.getProduct().length;
         for (int i =0; i < x;i++) {
             System.out.printf(list.getProduct(i ));
@@ -47,7 +46,7 @@ public class Husband {
            //
         }
         for (int i =0;i < DidntPresent.size(); i++) {
-            System.out.printf("\n didn't was : " + DidntPresent.get(i));
+            System.out.printf("\n Wasn't : " + DidntPresent.get(i));
         }
         for (int i =0; i < NeedToBuy.size();i++) {
             str = (String) NeedToBuy.get(i);

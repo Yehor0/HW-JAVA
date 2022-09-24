@@ -1,7 +1,5 @@
 package shops;
 
-import java.util.ArrayList;
-import java.util.List;
 
 public class Home_appliances_store extends shop{
     public Home_appliances_store() {
@@ -10,8 +8,9 @@ public class Home_appliances_store extends shop{
             super.isPresentPr[rnd.nextInt(isPresentTech.length)] = false;
         }
     }
+    @Override
     public void DoesIsDiscount() {
-        int x = rnd.nextInt(40) + 1;
+        int x = rnd.nextInt(60) + 1;
         float o = x;
         int y = rnd.nextInt(priceTech.length);
         int u;

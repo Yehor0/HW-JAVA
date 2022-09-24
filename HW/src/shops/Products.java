@@ -21,6 +21,9 @@ public class Products {
     public int getPriceTech(int i) {
         return priceTech[i];
     }
+    public String getTech(int i) {
+        return tech[i];
+    }
 
     public int[] getPricePr() {
         return pricePr;
@@ -32,9 +35,6 @@ public class Products {
 
     public String[] getTech() {
         return tech;
-    }
-    public String getTech(int i) {
-        return tech[i];
     }
 
 }
