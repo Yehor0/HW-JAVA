@@ -4,12 +4,13 @@ import java.util.Random;
 
 public class shop{
     private Product[] products;
-    String[] product;
+    private String[] product;
+    private boolean[] isPresent;
     int[] price;
-    public shop(String[] product, int[] price) {
+    public shop(String[] product, int[] price , boolean[] isPresent) {
         this.product = product;
         this.price = price;
-        Boolean[] isPresent = {true , true,true , true ,true , true , true,true , true ,true};
+        this.isPresent = isPresent;
         int y = rnd.nextInt(isPresent.length - 1);
         for (int i = 0; i < y; i++) {
             isPresent[rnd.nextInt(isPresent.length)] = false;
